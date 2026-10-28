@@ -545,7 +545,7 @@
   // Add ?debug=1 to the page address to show a small status line at top-left.
   (function camMotion() {
     var W = 32, H = 24, SAMPLE_MS = 200;
-    var THRESHOLD = 5;      // LOWER = MORE SENSITIVE. Mean per-pixel change (0-255) vs. the slowly-updating background
+    var THRESHOLD = 8;      // LOWER = MORE SENSITIVE. Mean per-pixel change (0-255) vs. the slowly-updating background
     var HITS_NEEDED = 2;      // consecutive samples above threshold (1 = even more sensitive)
     var BG_RATE = 0.08;       // how fast the background adapts (higher = forgets sooner)
     var FROZEN_SAMPLES = 40;  // ~8 s of byte-identical frames = frozen camera -> restart
